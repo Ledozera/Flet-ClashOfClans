@@ -17,7 +17,7 @@ def main(page: ft.Page):
             colors=[ft.colors.BLACK, ft.colors.PURPLE_300],
         ),
         content=ft.Image(
-            src='kisspng-clash-of-clans-clash-royale-video-game-youtube-5adcb9bd2fc0b8.6439623515244149091956.png',
+            src='personagem.png',
             scale=ft.Scale(scale=1.3)           
         )
     )
