@@ -32,7 +32,7 @@ This project showcases a P.E.K.K.A. character display using the Flet framework. 
 
 The main function is the entry point of the application. It sets up the page properties and adds the main layout container.
 
-    ```python
+    ```py
     def main(page: ft.Page):
         page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
         page.vertical_alignment = ft.MainAxisAlignment.CENTER
@@ -44,11 +44,11 @@ The main function is the entry point of the application. It sets up the page pro
 
 The image container displays the character's image with a gradient background and rounded top corners.
 
-    ```python
+    ```py
     image = ft.Container(
         ...
         content=ft.Image(
-            src='kisspng-clash-of-clans-clash-royale-video-game-youtube-5adcb9bd2fc0b8.6439623515244149091956.png',
+            src='personagem.png',
             scale=ft.Scale(scale=1.3)           
         )
     )
@@ -58,7 +58,7 @@ The image container displays the character's image with a gradient background an
 
 The info container displays the character's level, name, and description.
 
-    ```python
+    ```py
     info = ft.Container(
         ...
         content=ft.Column(
@@ -82,7 +82,7 @@ The info container displays the character's level, name, and description.
 
 The skills container displays the character's skill statistics: defense, speed, and damage.
 
-    ```python
+    ```py
     skills = ft.Container(
         ...
         content=ft.Row(
@@ -111,7 +111,7 @@ The skills container displays the character's skill statistics: defense, speed, 
 
 The layout container brings together the image, info, and skills containers into a cohesive design.
 
-    ```python
+    ```py
     layout = ft.Container(
         ...
         content=ft.Column(
@@ -128,7 +128,7 @@ The layout container brings together the image, info, and skills containers into
 
 The script runs the main function when executed directly.
 
-    ```python
+    ```py
     if __name__ == '__main__':
         ft.app(target=main)
     ```
